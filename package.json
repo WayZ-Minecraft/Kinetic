@@ -1,0 +1,19 @@
+{
+  "name": "kinetic_niwer_engine_blockbench_exporter",
+  "version": "1.0.0",
+  "description": "Kinetic is a plugin for exporting models and animations for the Niwer's Engine.",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "keywords": [],
+  "author": "Niwer",
+  "license": "ISC",
+  "type": "module",
+  "sideEffects": true,
+  "devDependencies": {
+    "blockbench-types": "^5.0.6",
+    "webpack": "^5.105.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
