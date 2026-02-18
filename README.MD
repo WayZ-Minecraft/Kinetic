@@ -9,7 +9,7 @@ This repository contains the Niwer's Engine Blockbench Plugin.
 - Import OBJ models files by drag and drop in Blockbench directly !
 
 # Installation
-1. Download the latest release of the plugin from the Releases section or use the URL of the latest release to install it directly from Blockbench.
+1. Download the latest release of the plugin from the Releases section or use the [URL](https://github.com/WayZ-Minecraft/Niwer_engine_blockbench_plugin/releases/latest/download/kinetic_niwer_engine_blockbench_exporter.js) of the latest release to install it directly from Blockbench.
 2. Open Blockbench and go to the "Plugins" tab.
 3. Click on "Install from URL" and paste the URL of the latest release.
 4. Done!
@@ -17,4 +17,4 @@ This repository contains the Niwer's Engine Blockbench Plugin.
 # Usage
 - To export your model, go to the "File" menu and select "Export" > "Kinetic Data Export". A dialog will appear with the exported data in JSON format. You can copy this data and use it in your Content-Pack.
 - Or use the keybind Ctrl + Q to open the export dialog directly.
-- To setup seats positions, go to the "Edit" menu and select "Setup Seats Positions
+- To setup seats positions, go to the "Tools" menu and select "Setup Seats Positions

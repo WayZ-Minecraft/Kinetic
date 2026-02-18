@@ -9,7 +9,7 @@ module.exports = {
 	mode: 'production',
 	optimization: {
         usedExports: false, // Disable tree shaking to keep all code, even if it seems unused
-        minimize: false     // Disable minification to preserve code readability and structure
+        minimize: true     // Disable minification to preserve code readability and structure
     },
 	externals: {
 		three: 'THREE',

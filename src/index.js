@@ -1,4 +1,4 @@
-import { CODEC_OBJ } from './obj_exporter.js';
+import { importOBJFromFile } from './obj_importer.js';
 import { EXPORT_FORM_ACTION, SEATS_FORM_ACTION } from './ui.js';
 
 const textAreaStyle = `dialog#kinetic_export textarea { tab-size: 40px; min-height: 250px; }`;
@@ -18,7 +18,7 @@ function removeAction(action) {
         title: 'Kinetic Importer/Exporter',
         author: 'Niwer',
         icon: 'movie',
-        version: '2.0.0',
+        version: '2.0.1',
         variant: 'both',
         description: 'This plugin allow you to import/export : OBJ (MTL optional), ANIM file, collisions/seats for JSON, and more!',
         onload() {
@@ -33,7 +33,7 @@ function removeAction(action) {
             Blockbench.addDragHandler("obj_drag_n_drop", {
                 extensions: ['obj']
             }, (files) => {
-                for(file of files) CODEC_OBJ.load(file);
+                for(const imported_file of files) importOBJFromFile(imported_file); // For each dropped file, attempt to import it as an OBJ model
             });
         },
         onunload() {
