@@ -9,7 +9,7 @@ This repository contains the Niwer's Engine Blockbench Plugin.
 - Import OBJ models files by drag and drop in Blockbench directly !
 
 # Installation
-1. Download the latest release of the plugin from the Releases section or use the [URL](https://github.com/WayZ-Minecraft/Niwer_engine_blockbench_plugin/releases/latest/download/kinetic_niwer_engine_blockbench_exporter.js) of the latest release to install it directly from Blockbench.
+1. Download the latest release of the plugin from the Releases section or use the [URL](https://github.com/WayZ-Minecraft/Kinetic/releases/latest/download/kinetic_niwer_engine_blockbench_exporter.js) of the latest release to install it directly from Blockbench.
 2. Open Blockbench and go to the "Plugins" tab.
 3. Click on "Install from URL" and paste the URL of the latest release.
 4. Done!
