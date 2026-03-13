@@ -4,7 +4,8 @@
   "description": "Kinetic is a plugin for exporting models and animations for the Niwer's Engine.",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "test": "jest"
   },
   "keywords": [],
   "author": "Niwer",
@@ -13,6 +14,7 @@
   "sideEffects": true,
   "devDependencies": {
     "blockbench-types": "^5.0.6",
+    "jest": "^30.3.0",
     "webpack": "^5.105.2",
     "webpack-cli": "^6.0.1"
   }
