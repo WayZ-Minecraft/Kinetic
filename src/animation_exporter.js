@@ -63,15 +63,15 @@ function compileAnimation(animation) {
 				switch (kf.channel) {
 					case "position":
 						FRAME.position = {
-							x: kf.getArray()[0],
+							x: -kf.getArray()[0],
 							y: kf.getArray()[1],
 							z: kf.getArray()[2]
 						}
 						break;
 					case "rotation":
 						FRAME.rotation = {
-							x: kf.getArray()[0],
-							y: kf.getArray()[1],
+							x: -kf.getArray()[0],
+							y: -kf.getArray()[1],
 							z: kf.getArray()[2]
 						}
 						break;
