@@ -18,7 +18,7 @@ function removeAction(action) {
         title: 'Kinetic Importer/Exporter',
         author: 'Niwer',
         icon: 'movie',
-        version: '2.0.1',
+        version: '2.0.2',
         variant: 'both',
         description: 'This plugin allow you to import/export : OBJ (MTL optional), ANIM file, collisions/seats for JSON, and more!',
         onload() {
