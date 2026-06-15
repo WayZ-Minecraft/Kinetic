@@ -19,8 +19,7 @@ function compileAnimation(animation) {
 	const animators = animation.animators;
 
 	/* Blockbench 5.1 changed the coordinate system, X and Y axes are now flipped for rotations and X for positions */
-	const BB_VERSION = getBlockBenchVersion().split('.').map(Number);
-	const NEEDS_AXIS_FIX = BB_VERSION[0] > 5 || (BB_VERSION[0] === 5 && BB_VERSION[1] >= 1);
+	const SHOULD_USE_NEW_AXIS = Blockbench.isNewerThan('4.99');
 
 	/* Create the object that will be serialized to JSON */
 	let objectForJson = {
@@ -67,15 +66,15 @@ function compileAnimation(animation) {
 				switch (kf.channel) {
 					case "position":
 						FRAME.position = {
-							x: NEEDS_AXIS_FIX ? -kf.getArray()[0] : kf.getArray()[0],
+							x: SHOULD_USE_NEW_AXIS ? -kf.getArray()[0] : kf.getArray()[0],
 							y: kf.getArray()[1],
 							z: kf.getArray()[2]
 						}
 						break;
 					case "rotation":
 						FRAME.rotation = {
-							x: NEEDS_AXIS_FIX ? -kf.getArray()[0] : kf.getArray()[0],
-							y: NEEDS_AXIS_FIX ? -kf.getArray()[1] : kf.getArray()[1],
+							x: SHOULD_USE_NEW_AXIS ? -kf.getArray()[0] : kf.getArray()[0],
+							y: SHOULD_USE_NEW_AXIS ? -kf.getArray()[1] : kf.getArray()[1],
 							z: kf.getArray()[2]
 						}
 						break;
